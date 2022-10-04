@@ -92,7 +92,6 @@ name = NumeralRelated;
 },
 {
 code = "hyphen
-softhyphen
 endash
 emdash
 periodcentered
@@ -163,7 +162,8 @@ downTipLeftArrow
 downTipRightArrow
 anticlockwiseOpenCircleArrow
 clockwiseOpenCircleArrow
-leftAndRightArrow";
+leftAndRightArrow
+";
 name = UppercasePunct;
 },
 {
@@ -568,7 +568,7 @@ Tag = ital;
 );
 }
 );
-date = "2022-10-04 05:55:59 +0000";
+date = "2022-10-04 06:01:29 +0000";
 designer = "Wei Huang based on Nimbus Sans by URW Studio, based on Helvetica by Max Miedinger.";
 designerURL = "https://weiweihuanghuang.github.io/";
 familyName = "Fragment Mono";
@@ -63107,5 +63107,5 @@ m01 = {
 };
 };
 versionMajor = 1;
-versionMinor = 1;
+versionMinor = 2;
 }
