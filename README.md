@@ -3,7 +3,6 @@
 [![][Fontbakery]](https://weiweihuanghuang.github.io/fragment-mono/fontbakery/fontbakery-report.html)
 [![][Universal]](https://weiweihuanghuang.github.io/fragment-mono/fontbakery/fontbakery-report.html)
 [![][GF Profile]](https://weiweihuanghuang.github.io/fragment-mono/fontbakery/fontbakery-report.html)
-[![][Outline Correctness]](https://weiweihuanghuang.github.io/fragment-mono/fontbakery/fontbakery-report.html)
 [![][Shaping]](https://weiweihuanghuang.github.io/fragment-mono/fontbakery/fontbakery-report.html)
 
 [Fontbakery]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fweiweihuanghuang%2Ffragment-mono%2Fgh-pages%2Fbadges%2Foverall.json
