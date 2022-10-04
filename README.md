@@ -13,9 +13,9 @@
 
 Fragment Mono is a monospaced coding version of Helvetica created by modifying and extending [Nimbus Sans](https://github.com/twardoch/urw-core35-fonts) by URW Design Studio. 
 
-![Sample Image](documentation/FragmentMono.png)
+[![Sample Image](documentation/FragmentMono.png)](documentation/FragmentMonoSpecimenDocumentation.pdf)
 
-![Sample Image](documentation/FragmentMonoCharSet.png)
+[![Sample Image](documentation/FragmentMonoCharSet.png)](documentation/FragmentMonoSpecimenDocumentation.pdf)
 
 ## About
 
