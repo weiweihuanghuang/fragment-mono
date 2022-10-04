@@ -50,7 +50,6 @@ glyphsLib==6.0.7
 glyphtools==0.8.0
 hyperglot==0.4.1
 idna==3.4
-importlib-resources==5.9.0
 Jinja2==3.1.2
 lxml==4.9.1
 MarkupSafe==2.1.1
@@ -100,16 +99,14 @@ stringbrewer==0.0.1
 tabulate==0.8.10
 toml==0.10.2
 ttfautohint-py==0.5.1
-typing_extensions==4.3.0
 ufo2ft==2.28.0
 ufoLib2==0.13.1
 ufolint==1.2.0
 uharfbuzz==0.30.0
 unicodedata2==14.0.0
-Unidecode==1.3.5
+Unidecode==1.3.4
 urllib3==1.26.12
 vharfbuzz==0.1.4
 vttLib==0.11.0
 wrapt==1.14.1
-zipp==3.8.1
 zopfli==0.2.1

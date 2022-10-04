@@ -5,3 +5,6 @@
 # Names should be added to this file as:
 # Name or Organization <email address>
 
+URW++ Design and Development GmbH <https://www.urwpp.de/>
+Monotype Imaging Holdings Inc. <https://www.monotype.com/>
+Wei Huang <https://weiweihuanghuang.github.io/>
