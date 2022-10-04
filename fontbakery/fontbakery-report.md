@@ -36,12 +36,9 @@ semicolon_semicolon_semicolon.liga, less_numbersign_hyphen_hyphen.liga and ascii
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -58,8 +55,6 @@ The following glyphs do not have the recommended number of contours:
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
 	- Glyph name: eogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: uni0E3F	Contours detected: 5	Expected: 3 
 
@@ -151,7 +146,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-short-s
 
 
 * 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
-* ⚠ **WARN** Font is monospaced but 1 glyphs (0.14%) have a different width. You should check the widths of: ['uni25C3'] [code: mono-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -178,12 +172,9 @@ semicolon_semicolon_semicolon.liga, less_numbersign_hyphen_hyphen.liga and ascii
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
@@ -200,8 +191,6 @@ The following glyphs do not have the recommended number of contours:
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
 	- Glyph name: eogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
 
 	- Glyph name: uni0E3F	Contours detected: 5	Expected: 3 
 
