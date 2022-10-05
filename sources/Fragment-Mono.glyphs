@@ -501,7 +501,7 @@ plus.end";
 name = Final;
 }
 );
-copyright = "Copyright 2022 The Fragment Mono Project Authors (https://github.com/weiweihuanghuang/Fragment-Mono)";
+copyright = "Copyright 2022 The Fragment-Mono Project Authors (https://github.com/weiweihuanghuang/fragment-mono)";
 customParameters = (
 {
 name = "Use Typo Metrics";
@@ -568,7 +568,7 @@ Tag = ital;
 );
 }
 );
-date = "2022-10-04 06:01:29 +0000";
+date = "2022-10-05 03:06:46 +0000";
 designer = "Wei Huang based on Nimbus Sans by URW Studio, based on Helvetica by Max Miedinger.";
 designerURL = "https://weiweihuanghuang.github.io/";
 familyName = "Fragment Mono";
@@ -63107,5 +63107,5 @@ m01 = {
 };
 };
 versionMajor = 1;
-versionMinor = 2;
+versionMinor = 3;
 }
