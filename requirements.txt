@@ -64,7 +64,7 @@ picosvg==0.20.4
 Pillow==9.2.0
 pip-api==0.0.30
 pngquant-cli==2.17.0.post5
-protobuf==3.19.4
+protobuf==3.19.5
 psutil==5.9.3
 pybind11==2.10.0
 pybrowserstack-screenshots==0.1
