@@ -1,5 +1,5 @@
 {
-.appVersion = "3140";
+.appVersion = "3141";
 DisplayStrings = (
 "HH##HH/numbersign.start/numbersign.end HH/numbersign.start/numbersign.middle/numbersign.end \012HH###HH/space/space HH\012HH####HH/space/space/space HH\012HH|}HH/space/bar_braceright.liga HH\012HH[|HH/space/bracketleft_bar.liga HH\012HH|]HH/space/bar_bracketright.liga HH\012HH{|HH/space/braceleft_bar.liga HH\012HH//=HH/space/slash_equal.liga HH\012HH***HH/space/space/asterisk_asterisk_asterisk.liga HH\012HH++HH/plus.start/plus.end HH/plus.start/plus.middle/plus.end H\012HH++HH/space HH\012HH+++HH/space/space HH\012HH.?HH/space/period_question.liga HH\012HH..HH/space/period_period.liga HH\012HH...HH/space/space/period_period_period.liga HH\012HH..<HH/space/space/period_period_less.liga HH\012HH<!--HH/space/space/space/less_exclam_hyphen_hyphen.liga HH\012HH<<-HH/space/space/less_less_hyphen.liga HH\012HH<-HH/space/less_hyphen.liga HH\012HH<#--HH/space/space/space/less_numbersign_hyphen_hyphen.liga HH\012HH<>HH/space/less_greater.liga HH\012HH<<~HH/space/space/less_less_asciitilde.liga HH\012HH<=>HH/space/space/less_equal_greater.liga HH\012HH<->HH/space/space/less_hyphen_greater.liga HH\012HH<|||HH/space/space/space/less_bar_bar_bar.liga HH\012HH<||HH/space/space/less_bar_bar.liga HH\012HH<|HH/space/less_bar.liga HH\012HH-|HH/space/hyphen_bar.liga HH\012HH->>HH/space/space/hyphen_greater_greater.liga HH\012HH-->HH/space/space/hyphen_hyphen_greater.liga HH\012HH->HH/space/hyphen_greater.liga HH\012HH>=HH/space/greater_equal.liga HH\012HH<=HH/space/less_equal.liga HH\012HH<<=HH/space/space/less_less_equal.liga HH\012HH<==HH/space/space/less_equal_equal.liga HH\012HH<|>HH/space/space/less_bar_greater.liga HH\012HH_|_HH/space/space/underscore_bar_underscore.liga HH\012HH!=HH/space/exclam_equal.liga HH\012HH!!HH/space/exclam_exclam.liga HH\012HH!==HH/space/space/exclam_equal_equal.liga HH\012HH=!=HH/space/space/equal_exclam_equal.liga HH\012HH=>HH/space/equal_greater.liga HH\012HH==HH/space/equal_equal.liga HH\012HH===HH/space/space/equal_equal_equal.liga HH\012HH::HH/space/colon_colon.liga HH\012HH;;HH/space/semicolon_semicolon.liga HH\012HH;;;HH/space/space/semicolon_semicolon_semicolon.liga HH\012HH:::HH/space/space/colon_colon_colon.liga HH\012HH|||>HH/space/space/space/bar_bar_bar_greater.liga HH\012HH||>HH/space/space/bar_bar_greater.liga HH\012HH|>HH/space/bar_greater.liga HH\012HH||-HH/space/space/bar_bar_hyphen.liga HH\012HH||HH/space/bar_bar.liga HH\012HH|-HH/space/bar_hyphen.liga HH\012HH|=HH/space/bar_equal.liga HH\012HH<=|HH/space/space/less_equal_bar.liga HH\012HH--HH/space/hyphen_hyphen.liga HH\012HH<--HH/space/space/less_hyphen_hyphen.liga HH\012HH---HH/space/space/hyphen_hyphen_hyphen.liga HH\012HH??HH/space/question_question.liga HH\012HH???HH/space/space/question_question_question.liga HH\012HH?.HH/space/question_period.liga HH\012HH&&HH/space HH\012HH__HH/space HH\012HH=//=HH/space/space/equal_slash_equal.liga HH\012HH<-<HH/space/space/less_hyphen_less.liga HH\012HH<=<HH/space/space/less_equal_less.liga HH\012HH<==>HH/space/space/space/less_equal_equal_greater.liga HH\012HH==>HH/space/space/equal_equal_greater.liga HH\012HH=>>HH/space/space/equal_greater_greater.liga HH\012HH>=>HH/space/space/greater_equal_greater.liga HH\012HH>>=HH/space/space/greater_greater_equal.liga HH\012HH>>-HH/space/space/greater_greater_hyphen.liga HH\012HH>-HH/space/greater_hyphen.liga HH\012HH>->HH/space/space/greater_hyphen_greater.liga HH\012HH<~HH/space/less_asciitilde.liga HH\012HH~~HH/space/asciitilde_asciitilde.liga H~~H\012HH<~>HH/space/space/less_asciitilde_greater.liga HH\012HH-<HH/space/hyphen_less.liga HH\012HH-<<HH/space/space/hyphen_less_less.liga HH\012HH=<<HH/space/space/equal_less_less.liga HH\012HH<-|HH/space/space/less_hyphen_bar.liga HH\012HH<=|HH/space/space/less_equal_bar.liga HH\012HH|=>HH/space/space/bar_equal_greater.liga HH\012HH|->HH/space/space/bar_hyphen_greater.liga HH\012HH<~~HH/space/space/less_asciitilde_asciitilde.liga HH\012HH-~HH/space/hyphen_asciitilde.liga HH\012HH~~>HH/space/space/asciitilde_asciitilde_greater.liga HH\012HH~>HH/space/asciitilde_greater.liga HH\012HH~-HH/space/asciitilde_hyphen.liga HH\012\012HH<+>HH/space/space HH\012HH<+HH/space HH\012HH+>HH/space HH\012HH<*>HH/space/space HH\012HH<*HH/space HH\012HH*>HH/space HH\012HH<//>HH/space/space HH\012HH<//HH/space HH\012HH//>HH/space HH"
 );
@@ -532,21 +532,6 @@ name = blueScale;
 value = 0.053;
 },
 {
-name = panose;
-value = (
-2,
-11,
-5,
-9,
-3,
-2,
-2,
-2,
-2,
-4
-);
-},
-{
 name = vendorID;
 value = WEI;
 },
@@ -568,7 +553,7 @@ Tag = ital;
 );
 }
 );
-date = "2022-10-24 01:34:30 +0000";
+date = "2022-10-26 10:01:19 +0000";
 designer = "Wei Huang based on Nimbus Sans by URW Studio, based on Helvetica by Max Miedinger.";
 designerURL = "https://weiweihuanghuang.github.io/";
 familyName = "Fragment Mono";
@@ -63081,6 +63066,23 @@ note = asciitilde;
 );
 instances = (
 {
+customParameters = (
+{
+name = panose;
+value = (
+2,
+11,
+5,
+9,
+3,
+2,
+2,
+2,
+2,
+4
+);
+}
+);
 interpolationWeight = 0;
 instanceInterpolations = {
 m01 = 1;
@@ -63088,6 +63090,23 @@ m01 = 1;
 name = Regular;
 },
 {
+customParameters = (
+{
+name = panose;
+value = (
+2,
+11,
+5,
+9,
+3,
+2,
+2,
+9,
+2,
+4
+);
+}
+);
 interpolationWeight = 1;
 instanceInterpolations = {
 "2BD620B1-1E84-4C86-A446-E2CCA0F180F7" = 1;
@@ -63106,5 +63125,5 @@ m01 = {
 };
 };
 versionMajor = 1;
-versionMinor = 10;
+versionMinor = 11;
 }
