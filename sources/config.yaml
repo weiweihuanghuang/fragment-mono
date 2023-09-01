@@ -2,3 +2,4 @@ sources:
   - Fragment-Mono.glyphs
 familyName: Fragment Mono
 buildVariable: false
+checkCompatibility: false
