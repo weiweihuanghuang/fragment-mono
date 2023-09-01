@@ -1,16 +1,24 @@
 ## Fontbakery report
 
-Fontbakery version: 0.8.10
+Fontbakery version: 0.8.13
 
-<details><summary><b>[11] FragmentMono-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check small caps glyphs are available. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/missing_small_caps_glyphs">com.google.fonts/check/missing_small_caps_glyphs</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with AttributeError: mapping
-</div></details><details><summary>🔥 <b>FAIL:</b> Version number has increased since previous release on Google Fonts? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/version_bump">com.google.fonts/check/version_bump</a>)</summary><div>
+<details><summary><b>[12] FragmentMono-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Version number has increased since previous release on Google Fonts? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/version_bump">com.google.fonts/check/version_bump</a>)</summary><div>
 
 
 * 🔥 **FAIL** Version number 1.0110015869140625 is equal to version on Google Fonts.
 * 🔥 **FAIL** Version number 1.0110015869140625 is equal to version on Google Fonts GitHub repo.
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ j̦̀ j̦́ ĵ̦ j̦̃ j̦̄ j̦̆ j̦̇ j̦̈ j̦̊ j̦̋ ǰ̦ j̦̒ į̆ [code: soft-dotted]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking correctness of monospaced metadata. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/monospace">com.google.fonts/check/monospace</a>)</summary><div>
+
+
+* 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
+* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 692 instead.
+Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
 </div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -49,17 +57,13 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: uni0E3F	Contours detected: 5	Expected: 3
-
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: eogonek	Contours detected: 3	Expected: 2
+	- Glyph name: eogonek	Contours detected: 3	Expected: 2 
 
-	- Glyph name: uni0E3F	Contours detected: 5	Expected: 3 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
@@ -172,7 +176,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* summation (U+2211): X=61.0,Y=1.0 (should be at baseline 0?) 
 
-	* And summation (U+2211): X=66.0,Y=700.0 (should be at cap-height 699?) [code: found-misalignments]
+	* summation (U+2211): X=66.0,Y=700.0 (should be at cap-height 699?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
 
 
@@ -288,7 +292,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* partialdiff (U+2202) contains a short segment L<<469.0,355.0>--<469.0,355.0>> 
 
-	* And summation (U+2211) contains a short segment L<<455.0,316.0>--<455.0,304.0>> [code: found-short-segments]
+	* summation (U+2211) contains a short segment L<<455.0,316.0>--<455.0,304.0>> [code: found-short-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -306,16 +310,24 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni2116 (U+2116): L<<129.0,699.0>--<250.0,118.0>>/L<<250.0,118.0>--<250.0,699.0>> = 11.764350807103282 
 
-	* And uni2116 (U+2116): L<<220.0,0.0>--<102.0,576.0>>/L<<102.0,576.0>--<102.0,0.0>> = 11.577489206021184 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[12] FragmentMono-Italic.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check small caps glyphs are available. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/missing_small_caps_glyphs">com.google.fonts/check/missing_small_caps_glyphs</a>)</summary><div>
-
-
-* 💔 **ERROR** Failed with AttributeError: mapping
-</div></details><details><summary>🔥 <b>FAIL:</b> Version number has increased since previous release on Google Fonts? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/version_bump">com.google.fonts/check/version_bump</a>)</summary><div>
+	* uni2116 (U+2116): L<<220.0,0.0>--<102.0,576.0>>/L<<102.0,576.0>--<102.0,0.0>> = 11.577489206021184 [code: found-jaggy-segments]
+</div></details><br></div></details><details><summary><b>[13] FragmentMono-Italic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Version number has increased since previous release on Google Fonts? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/version_bump">com.google.fonts/check/version_bump</a>)</summary><div>
 
 
 * 🔥 **FAIL** Version number 1.0110015869140625 is equal to version on Google Fonts.
 * 🔥 **FAIL** Version number 1.0110015869140625 is equal to version on Google Fonts GitHub repo.
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ j̦̀ j̦́ ĵ̦ j̦̃ j̦̄ j̦̆ j̦̇ j̦̈ j̦̊ j̦̋ ǰ̦ j̦̒ į̆ [code: soft-dotted]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking correctness of monospaced metadata. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/monospace">com.google.fonts/check/monospace</a>)</summary><div>
+
+
+* 🔥 **FAIL** The PANOSE numbers are incorrect for a monospaced font. Note: Family Type is set to 0, which does not seem right. [code: mono-bad-panose]
+* ⚠ **WARN** The OpenType spec recomments at https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table that hhea.numberOfHMetrics be set to 3 but this font has 692 instead.
+Please read https://github.com/fonttools/fonttools/issues/3014 to decide whether this makes sense for your font. [code: bad-numberOfHMetrics]
 </div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -354,17 +366,13 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: uni0E3F	Contours detected: 5	Expected: 3
-
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
 	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: eogonek	Contours detected: 3	Expected: 2
+	- Glyph name: eogonek	Contours detected: 3	Expected: 2 
 
-	- Glyph name: uni0E3F	Contours detected: 5	Expected: 3 
-
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
@@ -501,7 +509,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* summation (U+2211): X=6.0,Y=1.0 (should be at baseline 0?) 
 
-	* And summation (U+2211): X=159.0,Y=700.0 (should be at cap-height 699?) [code: found-misalignments]
+	* summation (U+2211): X=159.0,Y=700.0 (should be at cap-height 699?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
 
 
@@ -629,7 +637,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni21AA (U+21AA) contains a short segment L<<255.0,573.0>--<245.0,573.0>> 
 
-	* And summation (U+2211) contains a short segment L<<466.0,316.0>--<463.0,303.0>> [code: found-short-segments]
+	* summation (U+2211) contains a short segment L<<466.0,316.0>--<463.0,303.0>> [code: found-short-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -637,7 +645,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* eng (U+014B): L<<371.0,-37.0>--<379.0,0.0>> -> L<<379.0,0.0>--<456.0,363.0>> 
 
-	* And eng (U+014B): L<<542.0,376.0>--<462.0,0.0>> -> L<<462.0,0.0>--<449.0,-59.0>> [code: found-colinear-vectors]
+	* eng (U+014B): L<<542.0,376.0>--<462.0,0.0>> -> L<<462.0,0.0>--<449.0,-59.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -655,14 +663,15 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni2116 (U+2116): L<<164.0,0.0>--<172.0,592.0>>/L<<172.0,592.0>--<45.0,0.0>> = 11.333755455975231 
 
-	* And uni2116 (U+2116): L<<222.0,699.0>--<216.0,102.0>>/L<<216.0,102.0>--<344.0,699.0>> = 11.525493565128695 [code: found-jaggy-segments]
+	* uni2116 (U+2116): L<<222.0,699.0>--<216.0,102.0>>/L<<216.0,102.0>--<344.0,699.0>> = 11.525493565128695 [code: found-jaggy-segments]
 </div></details><br></div></details>
+
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 2 | 2 | 19 | 221 | 13 | 182 | 0 |
-| 0% | 0% | 4% | 50% | 3% | 41% | 0% |
+| 0 | 6 | 19 | 236 | 13 | 201 | 0 |
+| 0% | 1% | 4% | 50% | 3% | 42% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
