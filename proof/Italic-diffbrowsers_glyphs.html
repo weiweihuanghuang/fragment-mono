@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+    @font-face {
+        font-family: "Adobe NotDef";
+        src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+    }
+	.box-title{
+	  width: 100%;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	  width: 100%;
+	  float: left;
+	}
+	.box-text{
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	}
+	.nav-item{
+		display: block;
+		cursor: pointer;
+		-webkit-user-select: none; /* Safari */        
+		-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+/Edge */
+		user-select: none; /* Standard */
+		text-align: center;
+		color: white;
+		background-color: black;
+		display: block;
+		font-size: 9pt;
+		padding: 5px;
+		margin: 2px;
+	}
+	.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	font-family: sans-serif;
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	text-align: left;
+	font-size: 12pt;
+	line-height: 15pt;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+	padding: 10px;
+	visibility: visible;
+	}
+	.tooltipleft {
+		float:left;
+		width: 249px;
+	}
+	.tooltipright {
+		float:right;
+		width:250px;
+	}
+
+			/* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attr-before{
+                color: red;
+                cursor: text;
+            }
+            .attr-after{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .old .cell .new {
+            	display:  none;
+            }
+            .new .cell .old {
+            	display:  none;
+            }
+            .both .cell .old {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .new {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+			.spacer {
+				display:block;
+				float:left;
+				width:100%;
+			}
+
+	  
+
+	  
+
+	  
+	    @font-face{
+    src: url(FragmentMono-Italic.ttf);
+    font-family: "Fragment Mono";
+    font-weight: 400;
+    
+    font-style: italic;
+}
+	  
+
+	  
+
+	  
+
+	  
+	    .Italic{
+    font-family: "Fragment Mono", "Adobe NotDef";
+    font-weight: 400;
+    
+    font-style: italic;
+    font-variation-settings: "wght" 400;
+}
+	  
+	
+.cell{
+  position: relative;
+  z-index: -1;
+  float: left;
+  background-color: #fcfcfc;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  width: 30.0px;
+  line-height: 30.0px;
+}
+
+
+	   #ot-panel {
+		max-height: 400px;
+		overflow-y: scroll;
+		background: white;
+		padding: 10px;
+		display: none;
+	   }
+    </style>
+</head>
+<body>
+    <div id="nav">
+		
+			<div class="nav-item" id="ot-button">OT features</div>
+			<div id="ot-panel">
+			</div>
+		
+	</div>
+    <div id="content">
+	<h2>
+<b>Text</b>
+</h2>
+	
+  
+      <div class="box">
+	<div class="box-title">Italic 20pt</div>
+	  <span class="box-text Italic" style="font-size: 20pt">
+	    
+	      <div class="cell"> </div>
+	    
+	      <div class="cell">!</div>
+	    
+	      <div class="cell">"</div>
+	    
+	      <div class="cell">#</div>
+	    
+	      <div class="cell">$</div>
+	    
+	      <div class="cell">%</div>
+	    
+	      <div class="cell">&</div>
+	    
+	      <div class="cell">'</div>
+	    
+	      <div class="cell">(</div>
+	    
+	      <div class="cell">)</div>
+	    
+	      <div class="cell">*</div>
+	    
+	      <div class="cell">+</div>
+	    
+	      <div class="cell">,</div>
+	    
+	      <div class="cell">-</div>
+	    
+	      <div class="cell">.</div>
+	    
+	      <div class="cell">/</div>
+	    
+	      <div class="cell">0</div>
+	    
+	      <div class="cell">1</div>
+	    
+	      <div class="cell">2</div>
+	    
+	      <div class="cell">3</div>
+	    
+	      <div class="cell">4</div>
+	    
+	      <div class="cell">5</div>
+	    
+	      <div class="cell">6</div>
+	    
+	      <div class="cell">7</div>
+	    
+	      <div class="cell">8</div>
+	    
+	      <div class="cell">9</div>
+	    
+	      <div class="cell">:</div>
+	    
+	      <div class="cell">;</div>
+	    
+	      <div class="cell"><</div>
+	    
+	      <div class="cell">=</div>
+	    
+	      <div class="cell">></div>
+	    
+	      <div class="cell">?</div>
+	    
+	      <div class="cell">@</div>
+	    
+	      <div class="cell">A</div>
+	    
+	      <div class="cell">B</div>
+	    
+	      <div class="cell">C</div>
+	    
+	      <div class="cell">D</div>
+	    
+	      <div class="cell">E</div>
+	    
+	      <div class="cell">F</div>
+	    
+	      <div class="cell">G</div>
+	    
+	      <div class="cell">H</div>
+	    
+	      <div class="cell">I</div>
+	    
+	      <div class="cell">J</div>
+	    
+	      <div class="cell">K</div>
+	    
+	      <div class="cell">L</div>
+	    
+	      <div class="cell">M</div>
+	    
+	      <div class="cell">N</div>
+	    
+	      <div class="cell">O</div>
+	    
+	      <div class="cell">P</div>
+	    
+	      <div class="cell">Q</div>
+	    
+	      <div class="cell">R</div>
+	    
+	      <div class="cell">S</div>
+	    
+	      <div class="cell">T</div>
+	    
+	      <div class="cell">U</div>
+	    
+	      <div class="cell">V</div>
+	    
+	      <div class="cell">W</div>
+	    
+	      <div class="cell">X</div>
+	    
+	      <div class="cell">Y</div>
+	    
+	      <div class="cell">Z</div>
+	    
+	      <div class="cell">[</div>
+	    
+	      <div class="cell">\</div>
+	    
+	      <div class="cell">]</div>
+	    
+	      <div class="cell">^</div>
+	    
+	      <div class="cell">_</div>
+	    
+	      <div class="cell">`</div>
+	    
+	      <div class="cell">a</div>
+	    
+	      <div class="cell">b</div>
+	    
+	      <div class="cell">c</div>
+	    
+	      <div class="cell">d</div>
+	    
+	      <div class="cell">e</div>
+	    
+	      <div class="cell">f</div>
+	    
+	      <div class="cell">g</div>
+	    
+	      <div class="cell">h</div>
+	    
+	      <div class="cell">i</div>
+	    
+	      <div class="cell">j</div>
+	    
+	      <div class="cell">k</div>
+	    
+	      <div class="cell">l</div>
+	    
+	      <div class="cell">m</div>
+	    
+	      <div class="cell">n</div>
+	    
+	      <div class="cell">o</div>
+	    
+	      <div class="cell">p</div>
+	    
+	      <div class="cell">q</div>
+	    
+	      <div class="cell">r</div>
+	    
+	      <div class="cell">s</div>
+	    
+	      <div class="cell">t</div>
+	    
+	      <div class="cell">u</div>
+	    
+	      <div class="cell">v</div>
+	    
+	      <div class="cell">w</div>
+	    
+	      <div class="cell">x</div>
+	    
+	      <div class="cell">y</div>
+	    
+	      <div class="cell">z</div>
+	    
+	      <div class="cell">{</div>
+	    
+	      <div class="cell">|</div>
+	    
+	      <div class="cell">}</div>
+	    
+	      <div class="cell">~</div>
+	    
+	      <div class="cell"> </div>
+	    
+	      <div class="cell">¡</div>
+	    
+	      <div class="cell">¢</div>
+	    
+	      <div class="cell">£</div>
+	    
+	      <div class="cell">¤</div>
+	    
+	      <div class="cell">¥</div>
+	    
+	      <div class="cell">¦</div>
+	    
+	      <div class="cell">§</div>
+	    
+	      <div class="cell">¨</div>
+	    
+	      <div class="cell">©</div>
+	    
+	      <div class="cell">ª</div>
+	    
+	      <div class="cell">«</div>
+	    
+	      <div class="cell">¬</div>
+	    
+	      <div class="cell">®</div>
+	    
+	      <div class="cell">¯</div>
+	    
+	      <div class="cell">°</div>
+	    
+	      <div class="cell">±</div>
+	    
+	      <div class="cell">²</div>
+	    
+	      <div class="cell">³</div>
+	    
+	      <div class="cell">´</div>
+	    
+	      <div class="cell">µ</div>
+	    
+	      <div class="cell">¶</div>
+	    
+	      <div class="cell">·</div>
+	    
+	      <div class="cell">¸</div>
+	    
+	      <div class="cell">¹</div>
+	    
+	      <div class="cell">º</div>
+	    
+	      <div class="cell">»</div>
+	    
+	      <div class="cell">¼</div>
+	    
+	      <div class="cell">½</div>
+	    
+	      <div class="cell">¾</div>
+	    
+	      <div class="cell">¿</div>
+	    
+	      <div class="cell">À</div>
+	    
+	      <div class="cell">Á</div>
+	    
+	      <div class="cell">Â</div>
+	    
+	      <div class="cell">Ã</div>
+	    
+	      <div class="cell">Ä</div>
+	    
+	      <div class="cell">Å</div>
+	    
+	      <div class="cell">Æ</div>
+	    
+	      <div class="cell">Ç</div>
+	    
+	      <div class="cell">È</div>
+	    
+	      <div class="cell">É</div>
+	    
+	      <div class="cell">Ê</div>
+	    
+	      <div class="cell">Ë</div>
+	    
+	      <div class="cell">Ì</div>
+	    
+	      <div class="cell">Í</div>
+	    
+	      <div class="cell">Î</div>
+	    
+	      <div class="cell">Ï</div>
+	    
+	      <div class="cell">Ð</div>
+	    
+	      <div class="cell">Ñ</div>
+	    
+	      <div class="cell">Ò</div>
+	    
+	      <div class="cell">Ó</div>
+	    
+	      <div class="cell">Ô</div>
+	    
+	      <div class="cell">Õ</div>
+	    
+	      <div class="cell">Ö</div>
+	    
+	      <div class="cell">×</div>
+	    
+	      <div class="cell">Ø</div>
+	    
+	      <div class="cell">Ù</div>
+	    
+	      <div class="cell">Ú</div>
+	    
+	      <div class="cell">Û</div>
+	    
+	      <div class="cell">Ü</div>
+	    
+	      <div class="cell">Ý</div>
+	    
+	      <div class="cell">Þ</div>
+	    
+	      <div class="cell">ß</div>
+	    
+	      <div class="cell">à</div>
+	    
+	      <div class="cell">á</div>
+	    
+	      <div class="cell">â</div>
+	    
+	      <div class="cell">ã</div>
+	    
+	      <div class="cell">ä</div>
+	    
+	      <div class="cell">å</div>
+	    
+	      <div class="cell">æ</div>
+	    
+	      <div class="cell">ç</div>
+	    
+	      <div class="cell">è</div>
+	    
+	      <div class="cell">é</div>
+	    
+	      <div class="cell">ê</div>
+	    
+	      <div class="cell">ë</div>
+	    
+	      <div class="cell">ì</div>
+	    
+	      <div class="cell">í</div>
+	    
+	      <div class="cell">î</div>
+	    
+	      <div class="cell">ï</div>
+	    
+	      <div class="cell">ð</div>
+	    
+	      <div class="cell">ñ</div>
+	    
+	      <div class="cell">ò</div>
+	    
+	      <div class="cell">ó</div>
+	    
+	      <div class="cell">ô</div>
+	    
+	      <div class="cell">õ</div>
+	    
+	      <div class="cell">ö</div>
+	    
+	      <div class="cell">÷</div>
+	    
+	      <div class="cell">ø</div>
+	    
+	      <div class="cell">ù</div>
+	    
+	      <div class="cell">ú</div>
+	    
+	      <div class="cell">û</div>
+	    
+	      <div class="cell">ü</div>
+	    
+	      <div class="cell">ý</div>
+	    
+	      <div class="cell">þ</div>
+	    
+	      <div class="cell">ÿ</div>
+	    
+	      <div class="cell">Ā</div>
+	    
+	      <div class="cell">ā</div>
+	    
+	      <div class="cell">Ă</div>
+	    
+	      <div class="cell">ă</div>
+	    
+	      <div class="cell">Ą</div>
+	    
+	      <div class="cell">ą</div>
+	    
+	      <div class="cell">Ć</div>
+	    
+	      <div class="cell">ć</div>
+	    
+	      <div class="cell">Ċ</div>
+	    
+	      <div class="cell">ċ</div>
+	    
+	      <div class="cell">Č</div>
+	    
+	      <div class="cell">č</div>
+	    
+	      <div class="cell">Ď</div>
+	    
+	      <div class="cell">ď</div>
+	    
+	      <div class="cell">Đ</div>
+	    
+	      <div class="cell">đ</div>
+	    
+	      <div class="cell">Ē</div>
+	    
+	      <div class="cell">ē</div>
+	    
+	      <div class="cell">Ė</div>
+	    
+	      <div class="cell">ė</div>
+	    
+	      <div class="cell">Ę</div>
+	    
+	      <div class="cell">ę</div>
+	    
+	      <div class="cell">Ě</div>
+	    
+	      <div class="cell">ě</div>
+	    
+	      <div class="cell">Ğ</div>
+	    
+	      <div class="cell">ğ</div>
+	    
+	      <div class="cell">Ġ</div>
+	    
+	      <div class="cell">ġ</div>
+	    
+	      <div class="cell">Ģ</div>
+	    
+	      <div class="cell">ģ</div>
+	    
+	      <div class="cell">Ħ</div>
+	    
+	      <div class="cell">ħ</div>
+	    
+	      <div class="cell">Ī</div>
+	    
+	      <div class="cell">ī</div>
+	    
+	      <div class="cell">Į</div>
+	    
+	      <div class="cell">į</div>
+	    
+	      <div class="cell">İ</div>
+	    
+	      <div class="cell">ı</div>
+	    
+	      <div class="cell">Ĳ</div>
+	    
+	      <div class="cell">ĳ</div>
+	    
+	      <div class="cell">Ķ</div>
+	    
+	      <div class="cell">ķ</div>
+	    
+	      <div class="cell">Ĺ</div>
+	    
+	      <div class="cell">ĺ</div>
+	    
+	      <div class="cell">Ļ</div>
+	    
+	      <div class="cell">ļ</div>
+	    
+	      <div class="cell">Ľ</div>
+	    
+	      <div class="cell">ľ</div>
+	    
+	      <div class="cell">Ł</div>
+	    
+	      <div class="cell">ł</div>
+	    
+	      <div class="cell">Ń</div>
+	    
+	      <div class="cell">ń</div>
+	    
+	      <div class="cell">Ņ</div>
+	    
+	      <div class="cell">ņ</div>
+	    
+	      <div class="cell">Ň</div>
+	    
+	      <div class="cell">ň</div>
+	    
+	      <div class="cell">Ŋ</div>
+	    
+	      <div class="cell">ŋ</div>
+	    
+	      <div class="cell">Ō</div>
+	    
+	      <div class="cell">ō</div>
+	    
+	      <div class="cell">Ő</div>
+	    
+	      <div class="cell">ő</div>
+	    
+	      <div class="cell">Œ</div>
+	    
+	      <div class="cell">œ</div>
+	    
+	      <div class="cell">Ŕ</div>
+	    
+	      <div class="cell">ŕ</div>
+	    
+	      <div class="cell">Ŗ</div>
+	    
+	      <div class="cell">ŗ</div>
+	    
+	      <div class="cell">Ř</div>
+	    
+	      <div class="cell">ř</div>
+	    
+	      <div class="cell">Ś</div>
+	    
+	      <div class="cell">ś</div>
+	    
+	      <div class="cell">Ş</div>
+	    
+	      <div class="cell">ş</div>
+	    
+	      <div class="cell">Š</div>
+	    
+	      <div class="cell">š</div>
+	    
+	      <div class="cell">Ť</div>
+	    
+	      <div class="cell">ť</div>
+	    
+	      <div class="cell">Ū</div>
+	    
+	      <div class="cell">ū</div>
+	    
+	      <div class="cell">Ŭ</div>
+	    
+	      <div class="cell">ŭ</div>
+	    
+	      <div class="cell">Ů</div>
+	    
+	      <div class="cell">ů</div>
+	    
+	      <div class="cell">Ű</div>
+	    
+	      <div class="cell">ű</div>
+	    
+	      <div class="cell">Ų</div>
+	    
+	      <div class="cell">ų</div>
+	    
+	      <div class="cell">Ŵ</div>
+	    
+	      <div class="cell">ŵ</div>
+	    
+	      <div class="cell">Ŷ</div>
+	    
+	      <div class="cell">ŷ</div>
+	    
+	      <div class="cell">Ÿ</div>
+	    
+	      <div class="cell">Ź</div>
+	    
+	      <div class="cell">ź</div>
+	    
+	      <div class="cell">Ż</div>
+	    
+	      <div class="cell">ż</div>
+	    
+	      <div class="cell">Ž</div>
+	    
+	      <div class="cell">ž</div>
+	    
+	      <div class="cell">ƒ</div>
+	    
+	      <div class="cell">Ǎ</div>
+	    
+	      <div class="cell">ǎ</div>
+	    
+	      <div class="cell">Ș</div>
+	    
+	      <div class="cell">ș</div>
+	    
+	      <div class="cell">Ț</div>
+	    
+	      <div class="cell">ț</div>
+	    
+	      <div class="cell">ȷ</div>
+	    
+	      <div class="cell">ˆ</div>
+	    
+	      <div class="cell">ˇ</div>
+	    
+	      <div class="cell">˘</div>
+	    
+	      <div class="cell">˙</div>
+	    
+	      <div class="cell">˚</div>
+	    
+	      <div class="cell">˛</div>
+	    
+	      <div class="cell">˜</div>
+	    
+	      <div class="cell">˝</div>
+	    
+	      <div class="cell">̀</div>
+	    
+	      <div class="cell">́</div>
+	    
+	      <div class="cell">̂</div>
+	    
+	      <div class="cell">̃</div>
+	    
+	      <div class="cell">̄</div>
+	    
+	      <div class="cell">̆</div>
+	    
+	      <div class="cell">̇</div>
+	    
+	      <div class="cell">̈</div>
+	    
+	      <div class="cell">̊</div>
+	    
+	      <div class="cell">̋</div>
+	    
+	      <div class="cell">̌</div>
+	    
+	      <div class="cell">̒</div>
+	    
+	      <div class="cell">̦</div>
+	    
+	      <div class="cell">̧</div>
+	    
+	      <div class="cell">̨</div>
+	    
+	      <div class="cell">Ξ</div>
+	    
+	      <div class="cell">Ω</div>
+	    
+	      <div class="cell">π</div>
+	    
+	      <div class="cell">฿</div>
+	    
+	      <div class="cell">Ẁ</div>
+	    
+	      <div class="cell">ẁ</div>
+	    
+	      <div class="cell">Ẃ</div>
+	    
+	      <div class="cell">ẃ</div>
+	    
+	      <div class="cell">Ẅ</div>
+	    
+	      <div class="cell">ẅ</div>
+	    
+	      <div class="cell">ẞ</div>
+	    
+	      <div class="cell">Ỳ</div>
+	    
+	      <div class="cell">ỳ</div>
+	    
+	      <div class="cell">‑</div>
+	    
+	      <div class="cell">–</div>
+	    
+	      <div class="cell">—</div>
+	    
+	      <div class="cell">―</div>
+	    
+	      <div class="cell">‖</div>
+	    
+	      <div class="cell">‗</div>
+	    
+	      <div class="cell">‘</div>
+	    
+	      <div class="cell">’</div>
+	    
+	      <div class="cell">‚</div>
+	    
+	      <div class="cell">‛</div>
+	    
+	      <div class="cell">“</div>
+	    
+	      <div class="cell">”</div>
+	    
+	      <div class="cell">„</div>
+	    
+	      <div class="cell">†</div>
+	    
+	      <div class="cell">‡</div>
+	    
+	      <div class="cell">•</div>
+	    
+	      <div class="cell">…</div>
+	    
+	      <div class="cell">‰</div>
+	    
+	      <div class="cell">′</div>
+	    
+	      <div class="cell">″</div>
+	    
+	      <div class="cell">‹</div>
+	    
+	      <div class="cell">›</div>
+	    
+	      <div class="cell">‼</div>
+	    
+	      <div class="cell">‾</div>
+	    
+	      <div class="cell">⁄</div>
+	    
+	      <div class="cell">⁰</div>
+	    
+	      <div class="cell">⁴</div>
+	    
+	      <div class="cell">⁵</div>
+	    
+	      <div class="cell">⁶</div>
+	    
+	      <div class="cell">⁷</div>
+	    
+	      <div class="cell">⁸</div>
+	    
+	      <div class="cell">⁹</div>
+	    
+	      <div class="cell">₀</div>
+	    
+	      <div class="cell">₁</div>
+	    
+	      <div class="cell">₂</div>
+	    
+	      <div class="cell">₃</div>
+	    
+	      <div class="cell">₄</div>
+	    
+	      <div class="cell">₅</div>
+	    
+	      <div class="cell">₆</div>
+	    
+	      <div class="cell">₇</div>
+	    
+	      <div class="cell">₈</div>
+	    
+	      <div class="cell">₉</div>
+	    
+	      <div class="cell">₡</div>
+	    
+	      <div class="cell">₣</div>
+	    
+	      <div class="cell">₤</div>
+	    
+	      <div class="cell">₦</div>
+	    
+	      <div class="cell">₧</div>
+	    
+	      <div class="cell">₨</div>
+	    
+	      <div class="cell">₩</div>
+	    
+	      <div class="cell">₪</div>
+	    
+	      <div class="cell">₫</div>
+	    
+	      <div class="cell">€</div>
+	    
+	      <div class="cell">₭</div>
+	    
+	      <div class="cell">₮</div>
+	    
+	      <div class="cell">₱</div>
+	    
+	      <div class="cell">₲</div>
+	    
+	      <div class="cell">₳</div>
+	    
+	      <div class="cell">₴</div>
+	    
+	      <div class="cell">₵</div>
+	    
+	      <div class="cell">₸</div>
+	    
+	      <div class="cell">₹</div>
+	    
+	      <div class="cell">₺</div>
+	    
+	      <div class="cell">₼</div>
+	    
+	      <div class="cell">₽</div>
+	    
+	      <div class="cell">₾</div>
+	    
+	      <div class="cell">₿</div>
+	    
+	      <div class="cell">ℓ</div>
+	    
+	      <div class="cell">№</div>
+	    
+	      <div class="cell">℗</div>
+	    
+	      <div class="cell">™</div>
+	    
+	      <div class="cell">Ω</div>
+	    
+	      <div class="cell">℮</div>
+	    
+	      <div class="cell">⅓</div>
+	    
+	      <div class="cell">⅔</div>
+	    
+	      <div class="cell">⅛</div>
+	    
+	      <div class="cell">⅜</div>
+	    
+	      <div class="cell">⅝</div>
+	    
+	      <div class="cell">⅞</div>
+	    
+	      <div class="cell">←</div>
+	    
+	      <div class="cell">↑</div>
+	    
+	      <div class="cell">→</div>
+	    
+	      <div class="cell">↓</div>
+	    
+	      <div class="cell">↔</div>
+	    
+	      <div class="cell">↕</div>
+	    
+	      <div class="cell">↖</div>
+	    
+	      <div class="cell">↗</div>
+	    
+	      <div class="cell">↘</div>
+	    
+	      <div class="cell">↙</div>
+	    
+	      <div class="cell">↩</div>
+	    
+	      <div class="cell">↪</div>
+	    
+	      <div class="cell">↰</div>
+	    
+	      <div class="cell">↱</div>
+	    
+	      <div class="cell">↲</div>
+	    
+	      <div class="cell">↳</div>
+	    
+	      <div class="cell">↺</div>
+	    
+	      <div class="cell">↻</div>
+	    
+	      <div class="cell">⇆</div>
+	    
+	      <div class="cell">∂</div>
+	    
+	      <div class="cell">∅</div>
+	    
+	      <div class="cell">∆</div>
+	    
+	      <div class="cell">∏</div>
+	    
+	      <div class="cell">∑</div>
+	    
+	      <div class="cell">−</div>
+	    
+	      <div class="cell">∕</div>
+	    
+	      <div class="cell">∙</div>
+	    
+	      <div class="cell">√</div>
+	    
+	      <div class="cell">∞</div>
+	    
+	      <div class="cell">∫</div>
+	    
+	      <div class="cell">≈</div>
+	    
+	      <div class="cell">≠</div>
+	    
+	      <div class="cell">≤</div>
+	    
+	      <div class="cell">≥</div>
+	    
+	      <div class="cell">〈</div>
+	    
+	      <div class="cell">〉</div>
+	    
+	      <div class="cell">⎘</div>
+	    
+	      <div class="cell">■</div>
+	    
+	      <div class="cell">□</div>
+	    
+	      <div class="cell">▪</div>
+	    
+	      <div class="cell">▫</div>
+	    
+	      <div class="cell">▲</div>
+	    
+	      <div class="cell">△</div>
+	    
+	      <div class="cell">▴</div>
+	    
+	      <div class="cell">▵</div>
+	    
+	      <div class="cell">▶</div>
+	    
+	      <div class="cell">▷</div>
+	    
+	      <div class="cell">▸</div>
+	    
+	      <div class="cell">▹</div>
+	    
+	      <div class="cell">▼</div>
+	    
+	      <div class="cell">▽</div>
+	    
+	      <div class="cell">▾</div>
+	    
+	      <div class="cell">▿</div>
+	    
+	      <div class="cell">◀</div>
+	    
+	      <div class="cell">◁</div>
+	    
+	      <div class="cell">◂</div>
+	    
+	      <div class="cell">◃</div>
+	    
+	      <div class="cell">◆</div>
+	    
+	      <div class="cell">◇</div>
+	    
+	      <div class="cell">◊</div>
+	    
+	      <div class="cell">○</div>
+	    
+	      <div class="cell">◎</div>
+	    
+	      <div class="cell">●</div>
+	    
+	      <div class="cell">◦</div>
+	    
+	      <div class="cell">☰</div>
+	    
+	      <div class="cell">✓</div>
+	    
+	      <div class="cell">✗</div>
+	    
+	      <div class="cell">⟨</div>
+	    
+	      <div class="cell">⟩</div>
+	    
+	      <div class="cell">〚</div>
+	    
+	      <div class="cell">〛</div>
+	    
+	      <div class="cell"></div>
+	    
+	      <div class="cell"></div>
+	    
+	      <div class="cell"></div>
+	    
+	      <div class="cell">📄</div>
+	    
+	      <div class="cell">🔗</div>
+	    
+          </span>
+       </div>
+    
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "old"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	boxTitles = document.getElementsByClassName("box-title")
+	items = document.getElementsByClassName("box-text");
+	  
+	if (POSITION === "old") {
+	  POSITION = "new"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("old", "new")
+	    fontToggle.textContent = "new"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("old", "new")
+	  }
+
+	  } else {
+	  POSITION = "old"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("new", "old")
+	    fontToggle.textContent = "old"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("new", "old")
+	  }
+	}
+	}
+	if (fontToggle !== null) {
+		fontToggle.addEventListener("click", switchFonts);
+	}
+
+// apply optional ot feats
+
+function buildFeatureList() {
+	var features = [
+		'aalt', 'c2sc', 'calt', 'case', 'cpsp', 'dlig', 'dnom',
+		'fina', 'frac', 'init', 'kern', 'liga', 'lnum', 'numr', 'onum',
+		'ordn', 'pnum', 'salt', 'sinf', 'smcp', 'sups',
+		'swsh', 'titl', 'tnum', 'zero', 'ss01', 'ss02',
+		'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08',
+		'ss09', 'ss10', 'ss11', 'ss12', 'ss13', 'ss14',
+		'ss15', 'ss16', 'ss17', 'ss18', 'ss19', 'ss20'
+	]
+	
+	var otPanel = document.getElementById("ot-panel")
+	for (i=0; i<features.length; i++) {
+		var feat = features[i]
+		
+		var row = document.createElement("div");
+
+		var item = document.createElement("input");
+		item.type = "checkbox"
+		item.value = feat
+		item.classList.add("ot-checkbox")
+		var label = document.createElement("label")
+		label.textContent = feat
+
+		row.appendChild(item)
+		row.appendChild(label)
+
+		otPanel.appendChild(row)
+	}
+}
+
+buildFeatureList()
+
+
+function enableFeatures() {
+	var checkboxes = document.getElementsByClassName("ot-checkbox")
+	var res = []
+	var disableKerning = false
+	for (i=0; i<checkboxes.length; i++) {
+		if (checkboxes[i].checked === true) {
+			var checkbox = checkboxes[i]
+			res.push('"' + checkbox.value + '"')
+
+			if (checkbox.value === "kern") {
+				disableKerning = true
+			}
+		}
+	}	
+
+	var boxText = document.getElementsByClassName("box-text")
+	var otString = res.join(", ")
+	for (j=0; j<boxText.length; j++) {
+		boxText[j].style.fontFeatureSettings = otString
+		if (disableKerning === true) {
+			boxText[j].style.fontKerning = "none"
+		}
+	}
+}
+
+var otButton = document.getElementById("ot-button")
+otButton.addEventListener("click", function() {
+    otPanel = document.getElementById("ot-panel")
+    if (otPanel.style.display !== "block") {
+        otPanel.style.display = "block"
+    } else {
+        otPanel.style.display = "none"
+    }
+})
+var checkboxes = document.getElementsByClassName("ot-checkbox")
+for (i=0; i<checkboxes.length; i++) {
+	cb = checkboxes[i]
+	cb.addEventListener("click", enableFeatures)
+}	
+    
+	
+
+    </script>
+</html>
