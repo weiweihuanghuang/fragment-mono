@@ -22,15 +22,6 @@ jobs:
         key: ${{ runner.os }}-venv-${{ hashFiles('**/requirements*.txt') }}
         restore-keys: |
           ${{ runner.os }}-venv-
-    - name: Do first-run script if necessary
-      run: make .init.stamp
-      if: github.repository != 'googlefonts/googlefonts-project-template'
-    - uses: stefanzweifel/git-auto-commit-action@v4
-      name: First-run setup
-      if: github.repository != 'googlefonts/googlefonts-project-template'
-      with:
-        file_pattern: .init.stamp README.md requirements.txt OFL.txt
-        commit_message: "Personalize for this repo"
     - name: gen zip file name
       id: zip-name
       shell: bash
