@@ -21,8 +21,11 @@ Download a specimen [here](documentation/FragmentMonoSpecimenDocumentation.pdf).
 - Drawing quality has been cleaned up and improved.
 - Spacing has been matched to SF Mono.
 
+### Alternate Stylistic Set Characters
+![Alternate Stylistic Set Characters](documentation/alternates.png)
+
 ### Coding Ligatures
-![Sample Image](documentation/FragmentMonoCoding.png)
+![Coding Ligatures](documentation/FragmentMonoCoding.png)
 
 ### Javascript
 ![JavaScript sample](documentation/javascript.png)
@@ -49,6 +52,14 @@ If you want to build fonts manually on your own computer:
 The proof files and QA tests are also available automatically via GitHub Actions - look at https://weiweihuanghuang.github.io/fragment-mono.
 
 ## Changelog
+
+**28 June 2024. Version 1.20**
+
+- Added alternate i and l options in `ss03`–`ss06` (for improved legibility, [see specimen](documentation/FragmentMonoSpecimenDocumentation.pdf)).
+- Added alternate 1 with serif in `ss07`.
+- Added circled numerals and letters.
+- Added [box drawing charaters](https://en.wikipedia.org/wiki/Box-drawing_characters).
+- Added [Powerline glyphs](https://github.com/powerline/powerline).
 
 **30 September 2022. Version 1.00**
 

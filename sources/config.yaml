@@ -3,3 +3,6 @@ sources:
 familyName: Fragment Mono
 buildVariable: false
 checkCompatibility: false
+buildSmallCap: false
+autohintTTF: true
+autohintOTF: true
