@@ -38,10 +38,10 @@ venv-test/touchfile: requirements-test.txt
 	touch venv-test/touchfile
 
 test: venv-test build.stamp
-	. venv-test/bin/activate; mkdir -p out/ out/fontbakery; fontbakery check-googlefonts -l WARN --full-lists --succinct --badges out/badges --html out/fontbakery/fontbakery-report.html --ghmarkdown out/fontbakery/fontbakery-report.md $(shell find fonts/ttf -type f)  || echo '::warning file=sources/config.yaml,title=Fontbakery failures::The fontbakery QA check reported errors in your font. Please check the generated report.'
+	TOCHECK=$$(find fonts/variable -type f 2>/dev/null); if [ -z "$$TOCHECK" ]; then TOCHECK=$$(find fonts/ttf -type f 2>/dev/null); fi ; . venv-test/bin/activate; mkdir -p out/ out/fontbakery; fontbakery check-googlefonts -l WARN --full-lists --succinct --badges out/badges --html out/fontbakery/fontbakery-report.html --ghmarkdown out/fontbakery/fontbakery-report.md $$TOCHECK  || echo '::warning file=sources/config.yaml,title=Fontbakery failures::The fontbakery QA check reported errors in your font. Please check the generated report.'
 
 proof: venv build.stamp
-	. venv/bin/activate; mkdir -p out/ out/proof; diffenator2 proof $(shell find fonts/ttf -type f) -o out/proof
+	TOCHECK=$$(find fonts/variable -type f 2>/dev/null); if [ -z "$$TOCHECK" ]; then TOCHECK=$$(find fonts/ttf -type f 2>/dev/null); fi ; . venv/bin/activate; mkdir -p out/ out/proof; diffenator2 proof $$TOCHECK -o out/proof
 
 images: venv $(DRAWBOT_OUTPUT)
 
@@ -55,5 +55,16 @@ clean:
 update-project-template:
 	npx update-template https://github.com/googlefonts/googlefonts-project-template/
 
-update:
-	pip install --upgrade $(dependency); pip freeze > requirements.txt
+update: venv venv-test
+	venv/bin/pip install --upgrade pip-tools
+	# See https://pip-tools.readthedocs.io/en/latest/#a-note-on-resolvers for
+	# the `--resolver` flag below.
+	venv/bin/pip-compile --upgrade --verbose --resolver=backtracking requirements.in
+	venv/bin/pip-sync requirements.txt
+
+	venv-test/bin/pip install --upgrade pip-tools
+	venv-test/bin/pip-compile --upgrade --verbose --resolver=backtracking requirements-test.in
+	venv-test/bin/pip-sync requirements-test.txt
+
+	git commit -m "Update requirements" requirements.txt requirements-test.txt
+	git push
