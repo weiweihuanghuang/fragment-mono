@@ -67,7 +67,7 @@ cffi==2.0.0
     #   pynacl
 cffsubr==0.4.0
     # via ufo2ft
-charset-normalizer==3.4.6
+charset-normalizer==3.4.7
     # via requests
 cmarkgfm==2025.10.22
     # via fontbakery
@@ -100,10 +100,8 @@ ffmpeg-python==0.2.0
 filelock==3.25.2
     # via youseedee
 font-v==2.1.0
-    # via
-    #   fontbakery
-    #   gftools
-fontbakery[googlefonts]==0.11.2
+    # via gftools
+fontbakery[beautifulsoup4,googlefonts,googlefontsalwayslatest,shaperglot]==1.1.0
     # via gftools
 fontfeatures==1.9.0
     # via gftools
@@ -159,7 +157,7 @@ fonttools[lxml,ufo,unicode,woff]==4.60.1
     #   ufoprocessor
     #   vharfbuzz
     #   vttlib
-freetype-py==2.5.1
+freetype-py==2.3.0
     # via
     #   diffenator2
     #   fontbakery
@@ -243,9 +241,8 @@ openstep-plist==0.5.2
     #   babelfont
     #   bumpfontversion
     #   glyphslib
-opentype-sanitizer==9.0.0
+opentype-sanitizer==9.2.0
     # via
-    #   -r requirements.in
     #   fontbakery
     #   gftools
 opentypespec==1.9.2
@@ -434,6 +431,7 @@ unicodedata2==15.1.0
     # via
     #   diffenator2
     #   drawbot-skia
+    #   fontbakery
     #   glyphsets
 unidecode==1.4.0
     # via gftools
