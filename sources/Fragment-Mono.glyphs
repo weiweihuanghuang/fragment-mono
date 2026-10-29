@@ -560,6 +560,10 @@ Name = Italic;
 Tag = ital;
 }
 );
+},
+{
+name = isFixedPitch;
+value = 1;
 }
 );
 date = "2024-06-28 04:41:57 +0000";
@@ -1954,10 +1958,6 @@ value = 1022;
 {
 name = winDescent;
 value = 378;
-},
-{
-name = isFixedPitch;
-value = 1;
 }
 );
 descender = -218;
@@ -2050,10 +2050,6 @@ value = 1022;
 {
 name = winDescent;
 value = 378;
-},
-{
-name = isFixedPitch;
-value = 1;
 }
 );
 descender = -218;
